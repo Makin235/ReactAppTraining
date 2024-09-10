@@ -1,6 +1,4 @@
-import ListGroup from "./components/ListGroup";
-import Alert from "./components/Alert";
-import Button from "./components/Button";
+import ContactContainer from "./components/ContactContainer";
 import {useState} from "react";
 
 function App() {
@@ -18,17 +16,20 @@ function App() {
 
     return (
         <>
-            <div><ListGroup items={items} heading="Cities" onSelectItem={handleSelectItem}/></div>
+            {/*<div><ListGroup items={items} heading="Cities" onSelectItem={handleSelectItem}/></div>*/}
+            {/*<div>*/}
+            {/*    <Button color={'secondary'} onClick={() => setAlertVisible(true)}>*/}
+            {/*        My Button*/}
+            {/*    </Button>*/}
+            {/*</div>*/}
+            {/*{alertVisible && <div>*/}
+            {/*    <Alert onClose={() => setAlertVisible(false)}>*/}
+            {/*        Hello <b>World</b>*/}
+            {/*    </Alert>*/}
+            {/*</div>}*/}
             <div>
-                <Button color={'secondary'} onClick={() => setAlertVisible(true)}>
-                    My Button
-                </Button>
+                <ContactContainer/>
             </div>
-            {alertVisible && <div>
-                <Alert onClose={() => setAlertVisible(false)}>
-                    Hello <b>World</b>
-                </Alert>
-            </div>}
         </>
     )
 }
